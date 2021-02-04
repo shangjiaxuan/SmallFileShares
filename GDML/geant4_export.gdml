@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+
+  <define/>
+
+  <materials>
+    <isotope N="54" Z="26" name="Fe540x000002DACEF3B620">
+      <atom unit="g/mole" value="53.9396"/>
+    </isotope>
+    <isotope N="56" Z="26" name="Fe560x000002DACEF3B670">
+      <atom unit="g/mole" value="55.9349"/>
+    </isotope>
+    <isotope N="57" Z="26" name="Fe570x000002DACEF3B940">
+      <atom unit="g/mole" value="56.9354"/>
+    </isotope>
+    <isotope N="58" Z="26" name="Fe580x000002DACEF3BAD0">
+      <atom unit="g/mole" value="57.9333"/>
+    </isotope>
+    <element name="Fe0x000002DACEFCE0E0">
+      <fraction n="0.05845" ref="Fe540x000002DACEF3B620"/>
+      <fraction n="0.91754" ref="Fe560x000002DACEF3B670"/>
+      <fraction n="0.02119" ref="Fe570x000002DACEF3B940"/>
+      <fraction n="0.00282" ref="Fe580x000002DACEF3BAD0"/>
+    </element>
+    <isotope N="50" Z="24" name="Cr500x000002DACEF3D6F0">
+      <atom unit="g/mole" value="49.946"/>
+    </isotope>
+    <isotope N="52" Z="24" name="Cr520x000002DACEF3B8F0">
+      <atom unit="g/mole" value="51.9405"/>
+    </isotope>
+    <isotope N="53" Z="24" name="Cr530x000002DACEF3CFC0">
+      <atom unit="g/mole" value="52.9407"/>
+    </isotope>
+    <isotope N="54" Z="24" name="Cr540x000002DACEF3D240">
+      <atom unit="g/mole" value="53.9389"/>
+    </isotope>
+    <element name="Cr0x000002DACEFCE6E0">
+      <fraction n="0.04345" ref="Cr500x000002DACEF3D6F0"/>
+      <fraction n="0.83789" ref="Cr520x000002DACEF3B8F0"/>
+      <fraction n="0.09501" ref="Cr530x000002DACEF3CFC0"/>
+      <fraction n="0.02365" ref="Cr540x000002DACEF3D240"/>
+    </element>
+    <isotope N="58" Z="28" name="Ni580x000002DACEF3D5B0">
+      <atom unit="g/mole" value="57.9353"/>
+    </isotope>
+    <isotope N="60" Z="28" name="Ni600x000002DACEF3D100">
+      <atom unit="g/mole" value="59.9308"/>
+    </isotope>
+    <isotope N="61" Z="28" name="Ni610x000002DACEF3CCF0">
+      <atom unit="g/mole" value="60.9311"/>
+    </isotope>
+    <isotope N="62" Z="28" name="Ni620x000002DACEF3D650">
+      <atom unit="g/mole" value="61.9283"/>
+    </isotope>
+    <isotope N="64" Z="28" name="Ni640x000002DACEF3CC00">
+      <atom unit="g/mole" value="63.928"/>
+    </isotope>
+    <element name="Ni0x000002DACEFCE320">
+      <fraction n="0.680769" ref="Ni580x000002DACEF3D5B0"/>
+      <fraction n="0.262231" ref="Ni600x000002DACEF3D100"/>
+      <fraction n="0.011399" ref="Ni610x000002DACEF3CCF0"/>
+      <fraction n="0.036345" ref="Ni620x000002DACEF3D650"/>
+      <fraction n="0.009256" ref="Ni640x000002DACEF3CC00"/>
+    </element>
+    <material name="G4_STAINLESS-STEEL0x000002DACCEB6200" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="282.97693634122"/>
+      <D unit="g/cm3" value="8"/>
+      <fraction n="0.746212874621521" ref="Fe0x000002DACEFCE0E0"/>
+      <fraction n="0.169001044311525" ref="Cr0x000002DACEFCE6E0"/>
+      <fraction n="0.0847860810669534" ref="Ni0x000002DACEFCE320"/>
+    </material>
+    <isotope N="14" Z="7" name="N140x000002DACEF3C6B0">
+      <atom unit="g/mole" value="14.0031"/>
+    </isotope>
+    <isotope N="15" Z="7" name="N150x000002DACEF3D380">
+      <atom unit="g/mole" value="15.0001"/>
+    </isotope>
+    <element name="N0x000002DACEFCEB60">
+      <fraction n="0.99632" ref="N140x000002DACEF3C6B0"/>
+      <fraction n="0.00368" ref="N150x000002DACEF3D380"/>
+    </element>
+    <isotope N="16" Z="8" name="O160x000002DACEF3C750">
+      <atom unit="g/mole" value="15.9949"/>
+    </isotope>
+    <isotope N="17" Z="8" name="O170x000002DACEF3D290">
+      <atom unit="g/mole" value="16.9991"/>
+    </isotope>
+    <isotope N="18" Z="8" name="O180x000002DACEF3CF70">
+      <atom unit="g/mole" value="17.9992"/>
+    </isotope>
+    <element name="O0x000002DACEFCECE0">
+      <fraction n="0.99757" ref="O160x000002DACEF3C750"/>
+      <fraction n="0.00038" ref="O170x000002DACEF3D290"/>
+      <fraction n="0.00205" ref="O180x000002DACEF3CF70"/>
+    </element>
+    <material name="AIR0x000002DACCEB5320" state="gas">
+      <MEE unit="eV" value="85.7025566408487"/>
+      <D unit="g/cm3" value="0.0012"/>
+      <fraction n="0.7" ref="N0x000002DACEFCEB60"/>
+      <fraction n="0.3" ref="O0x000002DACEFCECE0"/>
+    </material>
+    <isotope N="204" Z="82" name="Pb2040x000002DACEF3D6A0">
+      <atom unit="g/mole" value="203.973"/>
+    </isotope>
+    <isotope N="206" Z="82" name="Pb2060x000002DACEF3D150">
+      <atom unit="g/mole" value="205.974"/>
+    </isotope>
+    <isotope N="207" Z="82" name="Pb2070x000002DACEF3D010">
+      <atom unit="g/mole" value="206.976"/>
+    </isotope>
+    <isotope N="208" Z="82" name="Pb2080x000002DACEF3C4D0">
+      <atom unit="g/mole" value="207.977"/>
+    </isotope>
+    <element name="Pb0x000002DACEFCE1A0">
+      <fraction n="0.014" ref="Pb2040x000002DACEF3D6A0"/>
+      <fraction n="0.241" ref="Pb2060x000002DACEF3D150"/>
+      <fraction n="0.221" ref="Pb2070x000002DACEF3D010"/>
+      <fraction n="0.524" ref="Pb2080x000002DACEF3C4D0"/>
+    </element>
+    <material name="G4_Pb0x000002DACCEB5870" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="823"/>
+      <D unit="g/cm3" value="11.35"/>
+      <fraction n="1" ref="Pb0x000002DACEFCE1A0"/>
+    </material>
+  </materials>
+
+  <solids>
+    <box lunit="mm" name="Upper10x000002DACEFDB740" x="1000" y="1000" z="10"/>
+    <box lunit="mm" name="Upper20x000002DACEFDCD40" x="1000" y="1000" z="10"/>
+    <box lunit="mm" name="UpperDetectorBox0x000002DACEFDC640" x="1000" y="1000" z="100"/>
+    <sphere aunit="deg" deltaphi="360" deltatheta="180" lunit="mm" name="Object0x000002DACF03A910" rmax="100" rmin="0" startphi="0" starttheta="0"/>
+    <box lunit="mm" name="Lower10x000002DACEFDCFC0" x="1000" y="1000" z="10"/>
+    <box lunit="mm" name="Lower20x000002DACEFDBB40" x="1000" y="1000" z="10"/>
+    <box lunit="mm" name="LowerDetectorBox0x000002DACEFDB6C0" x="1000" y="1000" z="100"/>
+    <box lunit="mm" name="WorldBox0x000002DACEFDC8C0" x="1000" y="1000" z="1000"/>
+  </solids>
+
+  <structure>
+    <volume name="Upper10x000002DACD4C5040">
+      <materialref ref="G4_STAINLESS-STEEL0x000002DACCEB6200"/>
+      <solidref ref="Upper10x000002DACEFDB740"/>
+      <auxiliary auxtype="gammaECut" auxunit="MeV" auxvalue="0.0173344"/>
+      <auxiliary auxtype="electronECut" auxunit="MeV" auxvalue="0.970695"/>
+      <auxiliary auxtype="positronECut" auxunit="MeV" auxvalue="0.92609"/>
+      <auxiliary auxtype="protonECut" auxunit="MeV" auxvalue="0"/>
+      <auxiliary auxtype="SensDet" auxvalue="Upper1"/>
+    </volume>
+    <volume name="Upper20x000002DACD4C5930">
+      <materialref ref="G4_STAINLESS-STEEL0x000002DACCEB6200"/>
+      <solidref ref="Upper20x000002DACEFDCD40"/>
+      <auxiliary auxtype="gammaECut" auxunit="MeV" auxvalue="0.0173344"/>
+      <auxiliary auxtype="electronECut" auxunit="MeV" auxvalue="0.970695"/>
+      <auxiliary auxtype="positronECut" auxunit="MeV" auxvalue="0.92609"/>
+      <auxiliary auxtype="protonECut" auxunit="MeV" auxvalue="0"/>
+      <auxiliary auxtype="SensDet" auxvalue="Upper2"/>
+    </volume>
+    <volume name="UpperBox0x000002DACD4C51A0">
+      <materialref ref="AIR0x000002DACCEB5320"/>
+      <solidref ref="UpperDetectorBox0x000002DACEFDC640"/>
+      <physvol name="Upper10x000002DACEFD9720">
+        <volumeref ref="Upper10x000002DACD4C5040"/>
+        <position name="Upper10x000002DACEFD9720_pos" unit="mm" x="0" y="0" z="40"/>
+      </physvol>
+      <physvol name="Upper20x000002DACEFDA4A0">
+        <volumeref ref="Upper20x000002DACD4C5930"/>
+        <position name="Upper20x000002DACEFDA4A0_pos" unit="mm" x="0" y="0" z="-40"/>
+      </physvol>
+      <auxiliary auxtype="gammaECut" auxunit="MeV" auxvalue="0.00099"/>
+      <auxiliary auxtype="electronECut" auxunit="MeV" auxvalue="0.00099"/>
+      <auxiliary auxtype="positronECut" auxunit="MeV" auxvalue="0.00099"/>
+      <auxiliary auxtype="protonECut" auxunit="MeV" auxvalue="0"/>
+    </volume>
+    <volume name="Object0x000002DACD4C4C20">
+      <materialref ref="G4_Pb0x000002DACCEB5870"/>
+      <solidref ref="Object0x000002DACF03A910"/>
+      <auxiliary auxtype="gammaECut" auxunit="MeV" auxvalue="0.0945861"/>
+      <auxiliary auxtype="electronECut" auxunit="MeV" auxvalue="1.00386"/>
+      <auxiliary auxtype="positronECut" auxunit="MeV" auxvalue="0.951321"/>
+      <auxiliary auxtype="protonECut" auxunit="MeV" auxvalue="0"/>
+    </volume>
+    <volume name="Lower10x000002DACD4C4540">
+      <materialref ref="G4_STAINLESS-STEEL0x000002DACCEB6200"/>
+      <solidref ref="Lower10x000002DACEFDCFC0"/>
+      <auxiliary auxtype="gammaECut" auxunit="MeV" auxvalue="0.0173344"/>
+      <auxiliary auxtype="electronECut" auxunit="MeV" auxvalue="0.970695"/>
+      <auxiliary auxtype="positronECut" auxunit="MeV" auxvalue="0.92609"/>
+      <auxiliary auxtype="protonECut" auxunit="MeV" auxvalue="0"/>
+      <auxiliary auxtype="SensDet" auxvalue="Lower1"/>
+    </volume>
+    <volume name="Lower20x000002DACD4C4490">
+      <materialref ref="G4_STAINLESS-STEEL0x000002DACCEB6200"/>
+      <solidref ref="Lower20x000002DACEFDBB40"/>
+      <auxiliary auxtype="gammaECut" auxunit="MeV" auxvalue="0.0173344"/>
+      <auxiliary auxtype="electronECut" auxunit="MeV" auxvalue="0.970695"/>
+      <auxiliary auxtype="positronECut" auxunit="MeV" auxvalue="0.92609"/>
+      <auxiliary auxtype="protonECut" auxunit="MeV" auxvalue="0"/>
+      <auxiliary auxtype="SensDet" auxvalue="Lower2"/>
+    </volume>
+    <volume name="LowerBox0x000002DACD4C4800">
+      <materialref ref="AIR0x000002DACCEB5320"/>
+      <solidref ref="LowerDetectorBox0x000002DACEFDB6C0"/>
+      <physvol name="Lower10x000002DACEFD9420">
+        <volumeref ref="Lower10x000002DACD4C4540"/>
+        <position name="Lower10x000002DACEFD9420_pos" unit="mm" x="0" y="0" z="40"/>
+      </physvol>
+      <physvol name="Lower20x000002DACEFDA080">
+        <volumeref ref="Lower20x000002DACD4C4490"/>
+        <position name="Lower20x000002DACEFDA080_pos" unit="mm" x="0" y="0" z="-40"/>
+      </physvol>
+      <auxiliary auxtype="gammaECut" auxunit="MeV" auxvalue="0.00099"/>
+      <auxiliary auxtype="electronECut" auxunit="MeV" auxvalue="0.00099"/>
+      <auxiliary auxtype="positronECut" auxunit="MeV" auxvalue="0.00099"/>
+      <auxiliary auxtype="protonECut" auxunit="MeV" auxvalue="0"/>
+    </volume>
+    <volume name="LV_Box0x000002DACD4C5B40">
+      <materialref ref="AIR0x000002DACCEB5320"/>
+      <solidref ref="WorldBox0x000002DACEFDC8C0"/>
+      <physvol name="UpperBox0x000002DACEFD9F00">
+        <volumeref ref="UpperBox0x000002DACD4C51A0"/>
+        <position name="UpperBox0x000002DACEFD9F00_pos" unit="mm" x="0" y="0" z="400"/>
+      </physvol>
+      <physvol name="Object0x000002DACEFDA140">
+        <volumeref ref="Object0x000002DACD4C4C20"/>
+      </physvol>
+      <physvol name="LowerBox0x000002DACEFD9120">
+        <volumeref ref="LowerBox0x000002DACD4C4800"/>
+        <position name="LowerBox0x000002DACEFD9120_pos" unit="mm" x="0" y="0" z="-400"/>
+      </physvol>
+      <auxiliary auxtype="gammaECut" auxunit="MeV" auxvalue="0.00099"/>
+      <auxiliary auxtype="electronECut" auxunit="MeV" auxvalue="0.00099"/>
+      <auxiliary auxtype="positronECut" auxunit="MeV" auxvalue="0.00099"/>
+      <auxiliary auxtype="protonECut" auxunit="MeV" auxvalue="0"/>
+    </volume>
+  </structure>
+
+  <userinfo>
+    <auxiliary auxtype="Region" auxvalue="DefaultRegionForTheWorld0x000002DACCE54AA0">
+      <auxiliary auxtype="volume" auxvalue="LV_Box0x000002DACD4C5B40"/>
+      <auxiliary auxtype="gamcut" auxunit="mm" auxvalue="0.7"/>
+      <auxiliary auxtype="ecut" auxunit="mm" auxvalue="0.7"/>
+      <auxiliary auxtype="poscut" auxunit="mm" auxvalue="0.7"/>
+      <auxiliary auxtype="pcut" auxunit="mm" auxvalue="0"/>
+    </auxiliary>
+  </userinfo>
+
+  <setup name="Default" version="1.0">
+    <world ref="LV_Box0x000002DACD4C5B40"/>
+  </setup>
+
+</gdml>
